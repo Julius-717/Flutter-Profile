@@ -33,7 +33,23 @@ class AboutMePage extends StatelessWidget {
                   color: Color(0xff1F1E25),
                   borderRadius: BorderRadius.circular(20.0)
                 ),
-              )
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Skills', style: TextStyle(color: Colors.white, fontSize: 18),),
+                    SizedBox(height: 30.0),
+                    ProgressBarCustom(skill: 'Python', percentage: '90', color: Color(0xffA36FF6)),
+                    ProgressBarCustom(skill: 'Javascript E6', percentage: '80', color: Color(0xffA36FF6)),
+                    ProgressBarCustom(skill: 'Flutter', percentage: '87', color: Color(0xffA36FF6)),
+                    ProgressBarCustom(skill: 'HTML5', percentage: '95', color: Color(0xffA36FF6)),
+                    ProgressBarCustom(skill: 'CSS3', percentage: '95', color: Color(0xffA36FF6)),
+                    ProgressBarCustom(skill: 'Kotlin', percentage: '55', color: Color(0xffA36FF6)),
+                    ProgressBarCustom(skill: 'Ruby', percentage: '50', color: Color(0xffA36FF6)),
+                    ProgressBarCustom(skill: 'Data Science', percentage: '75', color: Color(0xffA36FF6)),
+                  ],
+                ),
+              ),
+              
             ],
           ),
         ),
