@@ -49,7 +49,24 @@ class AboutMePage extends StatelessWidget {
                   ],
                 ),
               ),
-              
+              SizedBox(height: 15.0),
+              Text('Interests', style: TextStyle(color: Colors.white, fontSize: 18),),
+              SizedBox(height: 15.0),
+
+              Column(
+                children: [
+                  Row(children: [
+                    Container(
+                      padding: EdgeInsets.all(15.0),
+                      decoration: BoxDecoration(
+                        color: Color(0xff1F1E25),
+                        borderRadius: BorderRadius.circular(20.0)
+                      ),
+                      child: Text('Fullstack Developer', style: TextStyle(color: Colors.white, fontSize: 15),),
+                    )
+                  ],)
+                ],
+              )
             ],
           ),
         ),
