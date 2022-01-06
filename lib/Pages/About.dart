@@ -13,7 +13,29 @@ class AboutMePage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 15.0),
-          
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  CardTop(icon: Icons.person_outline_rounded, text: 'About Me', isColor: true),
+                  CardTop(icon: Icons.work_outline_outlined, text: 'Experience', isColor: false, page: ExperiencePage()),
+                  CardTop(icon: Icons.stacked_line_chart_sharp, text: 'Education', isColor: false, page: EducationPage()),
+                ],
+              ),
+
+              SizedBox(height: 15.0),
+              Container(
+                padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 40.0),
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Color(0xff1F1E25),
+                  borderRadius: BorderRadius.circular(20.0)
+                ),
+              )
+            ],
+          ),
         ),
       )
     );
