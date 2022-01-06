@@ -10,7 +10,12 @@ class AboutMePage extends StatelessWidget {
         elevation: 0,
         title: Text('About Me', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 25)),
       ),
-      body: SingleChildScrollView,
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 15.0),
+          
+        ),
+      )
     );
   }
 }
