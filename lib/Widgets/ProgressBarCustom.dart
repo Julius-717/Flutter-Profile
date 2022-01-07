@@ -40,7 +40,7 @@ class ProgressBarCustom extends StatelessWidget {
                 width: barra,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50.0),
-                  color: color
+                  color: this.color
                 ),
               ),
 

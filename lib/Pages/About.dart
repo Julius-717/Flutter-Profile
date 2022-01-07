@@ -5,8 +5,8 @@ import 'package:flutter_profile/Widgets/CardTop.dart';
 import 'package:flutter_profile/Pages/EducationPage.dart';
 import 'package:flutter_profile/Pages/ExperiencePage.dart';
 
-class AboutMePage extends StatelessWidget {
-  const AboutMePage({Key? key}) : super(key: key);
+class Profile extends StatelessWidget {
+  const Profile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class AboutMePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: const Color(0xff040305),
         elevation: 0,
-        title: const Text('About Me', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 25)),
+        title: const Text('Profile', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 25)),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -26,7 +26,7 @@ class AboutMePage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
-                  CardTop(icon: Icons.person_outline_rounded, text: 'About Me', isColor: true, page: AboutMePage(),),
+                  CardTop(icon: Icons.person_outline_rounded, text: 'About Me', isColor: true, page: Profile(),),
                   CardTop(icon: Icons.work_outline_outlined, text: 'Experience', isColor: false, page: ExperiencePage()),
                   CardTop(icon: Icons.stacked_line_chart_sharp, text: 'Education', isColor: false, page: EducationPage()),
                 ],
@@ -46,13 +46,13 @@ class AboutMePage extends StatelessWidget {
                     Text('Skills', style: TextStyle(color: Colors.white, fontSize: 18),),
                     SizedBox(height: 30.0),
                     ProgressBarCustom(skill: 'Python', percentage: '90', color: Color(0xffA36FF6)),
-                    ProgressBarCustom(skill: 'Javascript E6', percentage: '80', color: Color(0xffA36FF6)),
+                    ProgressBarCustom(skill: 'Javascript ES6', percentage: '80', color: Color(0xffA36FF6)),
                     ProgressBarCustom(skill: 'Flutter', percentage: '87', color: Color(0xffA36FF6)),
                     ProgressBarCustom(skill: 'HTML5', percentage: '95', color: Color(0xffA36FF6)),
                     ProgressBarCustom(skill: 'CSS3', percentage: '95', color: Color(0xffA36FF6)),
                     ProgressBarCustom(skill: 'Kotlin', percentage: '55', color: Color(0xffA36FF6)),
                     ProgressBarCustom(skill: 'Ruby', percentage: '50', color: Color(0xffA36FF6)),
-                    ProgressBarCustom(skill: 'Data Science', percentage: '75', color: Color(0xffA36FF6)),
+            
                   ],
                 ),
               ),

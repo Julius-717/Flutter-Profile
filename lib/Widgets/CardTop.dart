@@ -7,6 +7,7 @@ class CardTop extends StatelessWidget {
   final IconData icon;
   final Widget page;
 
+  // ignore: use_key_in_widget_constructors
   const CardTop({ required this.isColor, required this.text, required this.icon, required this.page });
 
   @override

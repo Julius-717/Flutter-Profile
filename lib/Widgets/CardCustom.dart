@@ -7,6 +7,7 @@ class CardCustom extends StatelessWidget {
   final Color colorIcon;
   final bool isEducation;
 
+  // ignore: use_key_in_widget_constructors
   const CardCustom({ required this.text, required this.colorIcon, required this.isEducation, required this.education });
 
 
@@ -39,7 +40,7 @@ class CardCustom extends StatelessWidget {
                 Text(text, style: const TextStyle(color: Colors.white, fontSize: 16)),
                 const SizedBox(height: 7.0),
                 !isEducation 
-                ? const Text('2020 - New . Lima - PE', style: TextStyle(color: Colors.grey, fontSize: 15))
+                ? const Text('2019 - Moringa . Sofware Developer - PE', style: TextStyle(color: Colors.grey, fontSize: 15))
                 : Text( education , style: const TextStyle(color: Colors.grey, fontSize: 15))
               ],
             )

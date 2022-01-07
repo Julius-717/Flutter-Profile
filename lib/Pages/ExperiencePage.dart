@@ -27,8 +27,8 @@ class ExperiencePage extends StatelessWidget
             children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    const CardTop(icon: Icons.person_outline_rounded, text: 'About Me', isColor: false, page: AboutMePage()),
+                  children: const [
+                    CardTop(icon: Icons.person_outline_rounded, text: 'About Me', isColor: false, page: Profile()),
                     CardTop(icon: Icons.work_outline_outlined, text: 'Experience', isColor: true, page: ExperiencePage(),),
                     CardTop(icon: Icons.stacked_line_chart_sharp, text: 'Education', isColor: false, page: EducationPage()),
                   ],
@@ -36,7 +36,7 @@ class ExperiencePage extends StatelessWidget
 
                 const SizedBox(height: 15.0),
                 const CardCustom(text: 'Freelance Web Designer',colorIcon: Color(0xffA36FF6), isEducation: false, education: '',),
-                const CardCustom(text: 'Senior Web Developer',colorIcon: Color(0xff83DBC5), isEducation: false, education: '',),
+                const CardCustom(text: 'Junior Web Developer',colorIcon: Color(0xff83DBC5), isEducation: false, education: '',),
                 const CardCustom(text: 'Freelance Web Developer',colorIcon: Color(0xffE62755), isEducation: false, education: '',),
                 const CardCustom(text: 'Senior Flutter Developer',colorIcon: Color(0xffF7605D), isEducation: false, education: '',),
             ],
